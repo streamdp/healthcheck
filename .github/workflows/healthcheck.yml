@@ -8,7 +8,7 @@ jobs:
   healthcheck:
     strategy:
       matrix:
-        url: [ https://ccd.run.place, https://ip-info.run.place, https://weather.line.pm ]
+        url: [ "https://ccd.run.place", "https://ip-info.run.place", "https://weather.line.pm" ]
     runs-on: ubuntu-24.04
     steps:
       - name: Check availability of ${{ matrix.url }}
