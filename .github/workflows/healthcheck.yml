@@ -1,9 +1,9 @@
 name: healthcheck
-
 on:
   push:
     branches: ['*']
-
+  schedule:
+    cron: "*/5 * * * *"
 jobs:
   healthcheck:
     strategy:
@@ -12,6 +12,4 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Check availability of ${{ matrix.url }}
-        run: > 
-          test $(curl --silent --location --head --connect-timeout 25 --output /dev/null --write-out "%{http_code}" 
-            "${{ matrix.url }}") -eq 200 || exit 1
+        run: test $(curl --silent --location --head --connect-timeout 25 --output /dev/null --write-out "%{http_code}" ${{ matrix.url }}") -eq 200 || exit 1
