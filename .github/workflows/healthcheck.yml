@@ -8,9 +8,7 @@ jobs:
   healthcheck:
     runs-on: ubuntu-24.04
     steps:
-      - name: test availability of the ccd.run.place
-        env:
+      - env:
           WEB_SITE: "https://ccd.run.place"
-        run: |
-          test $(curl --silent --location --head --connect-timeout 5 --output /dev/null --write-out "%{http_code}" \
-            $WEB_SITE) -eq 200 || exit 1
+      - name: Check availability of ${{ WEB_SITE }}
+        run: test $(curl --silent --location --head --connect-timeout 5 --output /dev/null --write-out "%{http_code}" $WEB_SITE) -eq 200 || exit 1
