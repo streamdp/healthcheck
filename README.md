@@ -3,9 +3,9 @@
 [![healthcheck](https://github.com/streamdp/healthcheck/actions/workflows/healthcheck.yml/badge.svg?branch=main)](https://github.com/streamdp/healthcheck/actions/workflows/healthcheck.yml)
 
 This branch implements a GitHub workflow to check the health status of a website. The purpose of this workflow is to 
-continuously monitor the */healthz* endpoint (or another url if this is not implemented) of the site, ensuring that the
-site is operational and responds with a status indicating that all services are functioning correctly. It will help 
-developers and operations teams by providing real-time feedback about the availability and health of the website.
+continuously monitor the */healthz* endpoint of the site, ensuring that the site is operational and responds with a
+status indicating that all services are functioning correctly. It will help developers and operations teams by 
+providing real-time feedback about the availability and health of the website.
 
 ## Key Workflow Features:
 ### Health Endpoint Monitoring:
