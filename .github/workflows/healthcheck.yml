@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Check availability of ${{ matrix.url }}
-        run: test $(curl --silent --location --head --connect-timeout 5 --output /dev/null --write-out "%{http_code}" "${{ matrix.url }}") -eq 200 || exit 1
+        run: test $(curl --silent --location --head --connect-timeout 15 --output /dev/null --write-out "%{http_code}" "${{ matrix.url }}") -eq 200 || exit 1
