@@ -3,7 +3,7 @@ on:
   push:
     branches: ['*']
   schedule:
-    cron: "*/5 * * * *"
+    cron: ['*/5 * * * *']
 jobs:
   healthcheck:
     strategy:
