@@ -1,9 +1,11 @@
 name: healthcheck
+
 on:
   push:
     branches: ['*']
   schedule:
     - cron: '*/5 * * * *'
+
 jobs:
   healthcheck:
     strategy:
