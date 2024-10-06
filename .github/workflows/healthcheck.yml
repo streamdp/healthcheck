@@ -7,7 +7,7 @@ on:
     - cron: '*/5 * * * *'
 
 jobs:
-  healthcheck:
+  check-site:
     strategy:
       matrix:
         url: [ "https://ccd.run.place", "https://ip-info.run.place", "https://weather.line.pm"]
