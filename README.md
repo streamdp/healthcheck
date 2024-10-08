@@ -7,7 +7,7 @@ continuously monitor the */healthz* endpoint of the service, ensuring that the s
 status indicating that all is well. It will help developers and operations teams by providing real-time feedback about 
 the availability and health of the web service.
 ### Workflow Key Features:
-* The workflow will ping the /healthz endpoint of the web service at regular intervals (1 hour by default, can be reduce to 5 minutes).
+* The workflow will ping the /healthz endpoint of the web service at regular intervals (1 hour by default, can be reduced to 5 minutes).
 * It will check for a **200 OK** response, indicating that the web service is healthy.
 * If the status check fails, it will log the failure and notify the team using GitHub notification service.
 ```shell
