@@ -1,5 +1,6 @@
 ## Web service healthcheck workflow
 [![healthcheck](https://github.com/streamdp/healthcheck/actions/workflows/healthcheck.yml/badge.svg?branch=main)](https://github.com/streamdp/healthcheck/actions/workflows/healthcheck.yml)
+[![GitHub license](https://img.shields.io/github/license/streamdp/healthcheck.svg)](https://github.com/streamdp/healthcheck/blob/main/LICENSE)
 
 This branch implements a GitHub workflow to check the health status of a web service. The purpose of this workflow is to 
 continuously monitor the */healthz* endpoint of the service, ensuring that the service is operational and responds with a
