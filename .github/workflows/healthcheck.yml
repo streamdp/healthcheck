@@ -10,7 +10,7 @@ jobs:
   check-site:
     strategy:
       matrix:
-        url: [ "https://ccd.run.place", "https://ip-info.run.place", "https://weather.line.pm"]
+        url: [ "https://ccd.oncook.top", "https://ip-info.oncook.top", "https://weather.oncook.top"]
     runs-on: ubuntu-24.04
     steps:
       - name: Check availability of ${{ matrix.url }}
